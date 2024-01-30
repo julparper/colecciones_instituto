@@ -23,6 +23,8 @@ public class InstitutoTest
         int numAlumReal;
 
         Alumno a = new Alumno();
+        a.setNombre("Jorge");
+        a.setApellidos("Apellidos");
         instituto.matricular(a);
 
         numAlumReal = instituto.listarAlumnos().size();

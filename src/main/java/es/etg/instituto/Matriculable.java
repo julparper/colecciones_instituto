@@ -16,7 +16,13 @@ public interface Matriculable {
      * @param a alumno a desmatricular
      */
     public void desmatricular(Alumno a);
+
+    /**
+     * Lista los alumnos
+     * @return devuelve la lista de alumnos
+     */
     public List<Alumno> listarAlumnos();
+
     public void agregar(Curso c);
     public void eliminar(Curso c);
     public Set<Curso> listarCursos();
