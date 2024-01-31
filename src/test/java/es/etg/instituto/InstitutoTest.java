@@ -46,5 +46,22 @@ public class InstitutoTest
         assertEquals(numCursosEsperado, numCursosReal);
     }
 
+    @Test
+    public void devolverArrayCursosTest(){
+        
+        int numCursosEsperado = 3;
+        int numCursosReal;
+        Curso [] cursos = null;
+
+        instituto.agregar(new Curso());
+        instituto.agregar(new Curso());
+        instituto.agregar(new Curso());
+
+        cursos = instituto.delvolverArrayCursos();
+        numCursosReal = cursos.length;
+
+        assertEquals(numCursosEsperado, numCursosReal);
+    }
+
 
 }

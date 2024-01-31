@@ -45,4 +45,24 @@ public class Instituto implements Matriculable{
     public Set<Curso> listarCursos() {
         return cursos;
     }
+
+
+    public Alumno[] devolverArrayAlumnos(){
+        Alumno[] al = new Alumno[alumnos.size()];
+
+        for(int i=0; i<alumnos.size();i++){
+            al[i] = alumnos.get(i);
+        }
+        return al;
+    }
+
+    public Curso[] delvolverArrayCursos(){
+        int i=0;
+        Curso[] ac = new Curso[cursos.size()];
+        for(Curso c: cursos){
+            ac[i]=c;
+            i++;
+        }
+        return ac;
+    }
 }
